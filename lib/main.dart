@@ -3,6 +3,7 @@ import 'dart:io';
 import 'package:flutter/material.dart';
 import 'package:yotproj/states/authen.dart';
 import 'package:yotproj/states/multi_directional_scrollview.dart';
+import 'package:yotproj/states/process_choose_item.dart';
 
 void main() {
   HttpOverrides.global = MyHttpOverride();
@@ -16,7 +17,7 @@ class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return const MaterialApp(
-      home: MultiDirectionalScrollView(),
+      home: ProcessChooseItem(),
     );
   }
 }
